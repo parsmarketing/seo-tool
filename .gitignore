@@ -1,0 +1,13 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+# Google-sleutels en tokens nooit committen
+credentials/
+*.json.key
+token.json
+client_secret*.json
+service-account*.json
+# Ruwe data-exports per klant blijven lokaal
+clients/*/data/

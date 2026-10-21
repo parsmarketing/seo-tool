@@ -1,0 +1,18 @@
+# Technische gegevens van de klant. Kopieer de map _template naar clients/<slug>/.
+# Inhoudelijke context (aanbod, doelgroep, doelen) staat in profiel.md.
+
+[klant]
+naam = "Voorbeeld BV"
+domein = "voorbeeld.nl"   # zonder https://
+taal = "nl"               # taal van de content en zoekwoorden
+land = "nl"               # land voor Autocomplete en zoekresultaten
+
+[koppelingen]
+gsc_property = "sc-domain:voorbeeld.nl"   # of "https://www.voorbeeld.nl/"
+ga4_property_id = ""                     # alleen cijfers, bijv. "123456789"
+
+[concurrenten]
+domeinen = []   # bijv. ["concurrent1.nl", "concurrent2.nl"]
+
+[pagina]
+belangrijk = []   # paden of URL's die elke maand gecheckt worden, bijv. ["/diensten", "/contact"]
