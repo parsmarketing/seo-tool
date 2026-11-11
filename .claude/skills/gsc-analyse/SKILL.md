@@ -10,11 +10,11 @@ description: Analyseer Search Console-data van een klant op patronen en kansen, 
 - **Optioneel:** specifieke vraag, datum en omvang van een daling, bekende wijzigingen (migratie, redesign, Google-update).
 
 ## Data ophalen
-1. `.venv/bin/seo gsc --klant <slug> --dimensies query --vergelijk`
-2. `.venv/bin/seo gsc --klant <slug> --dimensies page --vergelijk`
-3. `.venv/bin/seo gsc --klant <slug> --dimensies date --dagen 90` voor de trendlijn.
+1. `uv run seo gsc --klant <slug> --dimensies query --vergelijk`
+2. `uv run seo gsc --klant <slug> --dimensies page --vergelijk`
+3. `uv run seo gsc --klant <slug> --dimensies date --dagen 90` voor de trendlijn.
 4. Bij een daling ook: `--dimensies device --vergelijk` en `--dimensies country --vergelijk`.
-5. Optioneel GA4: `.venv/bin/seo ga4 --klant <slug>` om te zien of de daling conversies raakt.
+5. Optioneel GA4: `uv run seo ga4 --klant <slug>` om te zien of de daling conversies raakt.
 6. Kijk in `logboek.md` naar eerdere wijzigingen rond de datum van de daling.
 
 ## Modus A: patronen en kansen (SP38)

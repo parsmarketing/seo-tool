@@ -10,8 +10,8 @@ description: Optimaliseer een bestaande pagina van een klant: titel, koppen, met
 - **Optioneel:** doelzoekwoord (anders afleiden uit GSC), lijst entiteiten/subonderwerpen.
 
 ## Data ophalen
-1. `.venv/bin/seo pagina --klant <slug> <url>` → titel, meta, H1-H3, woorden, schema, tekst.
-2. `.venv/bin/seo gsc --klant <slug> --dagen 90 --dimensies query,page --stdout` → filter op deze URL: welke zoektermen, vertoningen, CTR en positie.
+1. `uv run seo pagina --klant <slug> <url>` → titel, meta, H1-H3, woorden, schema, tekst.
+2. `uv run seo gsc --klant <slug> --dagen 90 --dimensies query,page --stdout` → filter op deze URL: welke zoektermen, vertoningen, CTR en positie.
 3. Kies het doelzoekwoord: opgegeven door de gebruiker, of de term met de meeste vertoningen voor deze URL (zeg welke en waarom).
 
 ## Output (sla op als `rapporten/<datum>-onpage-<pad>.md`)

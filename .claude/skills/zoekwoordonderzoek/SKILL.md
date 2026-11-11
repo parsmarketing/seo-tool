@@ -10,8 +10,8 @@ description: Zoekwoordonderzoek voor een klant (guide SP06-SP09): seeds uitbreid
 - **Optioneel:** focus (dienst, product, regio), persona, concurrent-URL's.
 
 ## Data ophalen
-1. `.venv/bin/seo suggest --klant <slug> "<seed1>" "<seed2>" ...` → Autocomplete-ideeën (a-z en vraagwoorden). Gebruik `--snel` bij meer dan 5 seeds.
-2. `.venv/bin/seo gsc --klant <slug> --dagen 90 --dimensies query,page` → zoektermen waarop de site al vertoningen heeft. Dit is de enige bron met echte cijfers.
+1. `uv run seo suggest --klant <slug> "<seed1>" "<seed2>" ...` → Autocomplete-ideeën (a-z en vraagwoorden). Gebruik `--snel` bij meer dan 5 seeds.
+2. `uv run seo gsc --klant <slug> --dagen 90 --dimensies query,page` → zoektermen waarop de site al vertoningen heeft. Dit is de enige bron met echte cijfers.
 3. Lees beide CSV's uit `clients/<slug>/data/`.
 
 ## Analyse

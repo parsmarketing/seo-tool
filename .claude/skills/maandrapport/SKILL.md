@@ -11,10 +11,10 @@ description: Schrijf een SEO-maandrapport voor een klant op basis van Search Con
 
 ## Data ophalen
 Bepaal start en eind van de maand (`--start JJJJ-MM-01 --eind JJJJ-MM-<laatste>`), dan:
-1. `.venv/bin/seo gsc --klant <slug> --start ... --eind ... --dimensies query --vergelijk`
-2. `.venv/bin/seo gsc --klant <slug> --start ... --eind ... --dimensies page --vergelijk`
-3. `.venv/bin/seo ga4 --klant <slug> --start ... --eind ...` (als `ga4_property_id` is ingevuld)
-4. `.venv/bin/seo psi --klant <slug>` (homepage, mobiel)
+1. `uv run seo gsc --klant <slug> --start ... --eind ... --dimensies query --vergelijk`
+2. `uv run seo gsc --klant <slug> --start ... --eind ... --dimensies page --vergelijk`
+3. `uv run seo ga4 --klant <slug> --start ... --eind ...` (als `ga4_property_id` is ingevuld)
+4. `uv run seo psi --klant <slug>` (homepage, mobiel)
 5. `logboek.md`: wat is er deze maand gedaan?
 Let op: `--vergelijk` vergelijkt met de periode van dezelfde lengte direct ervoor. Een jaar-op-jaar-vergelijking vraagt een tweede run met de data van vorig jaar.
 

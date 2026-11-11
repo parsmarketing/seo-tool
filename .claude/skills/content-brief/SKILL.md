@@ -11,9 +11,9 @@ description: Maak een SEO-contentbrief en artikeloutline voor één zoekwoord of
 
 ## Data ophalen
 1. `profiel.md` voor doelgroep, toon en USP's.
-2. `.venv/bin/seo gsc --klant <slug> --dagen 90 --dimensies query,page --stdout` en filter op termen rond het onderwerp: bestaat er al een pagina die erop rankt? (risico op kannibalisatie)
-3. `.venv/bin/seo suggest --klant <slug> "<zoekwoord>"` voor vragen en varianten.
-4. Concurrent-URL's die de gebruiker geeft: `.venv/bin/seo pagina <url> --stdout` voor hun koppenstructuur en lengte. Zonder URL's: zeg dat de SERP-analyse ontbreekt.
+2. `uv run seo gsc --klant <slug> --dagen 90 --dimensies query,page --stdout` en filter op termen rond het onderwerp: bestaat er al een pagina die erop rankt? (risico op kannibalisatie)
+3. `uv run seo suggest --klant <slug> "<zoekwoord>"` voor vragen en varianten.
+4. Concurrent-URL's die de gebruiker geeft: `uv run seo pagina <url> --stdout` voor hun koppenstructuur en lengte. Zonder URL's: zeg dat de SERP-analyse ontbreekt.
 5. Interne links: kies alleen uit URL's die in GSC-data of `interne_links_lijst` van de eigen site voorkomen.
 
 ## Output (sla op als `rapporten/<datum>-brief-<onderwerp>.md`)

@@ -1,7 +1,6 @@
 {
   "permissions": {
     "allow": [
-      "Bash(.venv/bin/seo:*)",
       "Bash(uv run seo:*)"
     ]
   }

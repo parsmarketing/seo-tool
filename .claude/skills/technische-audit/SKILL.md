@@ -10,10 +10,10 @@ description: Technische SEO-audit van een klant: indexeerbaarheid, robots/sitema
 - **Optioneel:** specifieke URL's, een crawl-export (bijv. Screaming Frog CSV) die de gebruiker aanlevert, CMS.
 
 ## Data ophalen
-1. `.venv/bin/seo site --klant <slug>` → robots.txt en sitemaps.
-2. `.venv/bin/seo pagina --klant <slug> /` en voor elke URL in `pagina.belangrijk` uit `client.toml`.
-3. `.venv/bin/seo psi --klant <slug> --strategie mobile,desktop` → Core Web Vitals (velddata uit CrUX) en Lighthouse.
-4. `.venv/bin/seo gsc --klant <slug> --dimensies page --dagen 28 --stdout` → pagina's met vertoningen (controleer of de belangrijke pagina's erin staan).
+1. `uv run seo site --klant <slug>` → robots.txt en sitemaps.
+2. `uv run seo pagina --klant <slug> /` en voor elke URL in `pagina.belangrijk` uit `client.toml`.
+3. `uv run seo psi --klant <slug> --strategie mobile,desktop` → Core Web Vitals (velddata uit CrUX) en Lighthouse.
+4. `uv run seo gsc --klant <slug> --dimensies page --dagen 28 --stdout` → pagina's met vertoningen (controleer of de belangrijke pagina's erin staan).
 5. Een crawl-export, als die is aangeleverd. Zonder crawl: zeg dat de audit alleen de gecontroleerde URL's dekt, niet de hele site.
 
 ## Beoordeling

@@ -9,9 +9,9 @@ description: Maak een nieuwe klant aan in clients/ (client.toml, profiel.md, log
 1. Vraag in één bericht: klantnaam, domein, taal/land (standaard nl/nl), en of je toegang hebt tot hun Search Console en GA4.
 2. Bepaal een slug (kleine letters, koppeltekens, bijv. `bakkerij-jansen`) en kopieer `clients/_template/` naar `clients/<slug>/`.
 3. Haal zelf op wat kan, zonder het te vragen:
-   - `.venv/bin/seo site --url https://<domein> --stdout` → robots.txt en sitemap.
-   - `.venv/bin/seo pagina https://<domein> --stdout` → titel, meta, koppen, taal, schema, tekst van de homepage.
-   - `.venv/bin/seo gsc-properties` → zoek de juiste property (`sc-domain:` heeft de voorkeur) en zet die in `client.toml`.
+   - `uv run seo site --url https://<domein> --stdout` → robots.txt en sitemap.
+   - `uv run seo pagina https://<domein> --stdout` → titel, meta, koppen, taal, schema, tekst van de homepage.
+   - `uv run seo gsc-properties` → zoek de juiste property (`sc-domain:` heeft de voorkeur) en zet die in `client.toml`.
 4. Vul `profiel.md` voor zover de homepage-tekst het onderbouwt (aanbod, werkgebied, toon). Markeer alles wat je afleidt met *(afgeleid van homepage, bevestigen)*.
 5. Vraag daarna in één bericht alleen wat ontbreekt: doelen/KPI's, doelgroep, concurrenten, kernzoekwoorden, merknaam-varianten, GA4 property-ID, belangrijke pagina's.
 6. Verwerk de antwoorden, zet in `logboek.md`: `| <datum> | Klant aangemaakt | profiel.md | ... |`.

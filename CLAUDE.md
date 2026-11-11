@@ -11,7 +11,7 @@ alle klantspecifieke data staat in `clients/<slug>/`.
 - `clients/<slug>/logboek.md` — wat er is gedaan, nieuwste bovenaan.
 - `clients/<slug>/rapporten/` — opgeleverde briefs, audits en rapporten (in git).
 - `clients/<slug>/data/` — ruwe exports van de `seo`-commando's (niet in git).
-- `seo_tool/` — Python-CLI `seo` die data ophaalt. Draai met `.venv/bin/seo` of `uv run seo`.
+- `seo_tool/` — Python-CLI `seo` die data ophaalt. Draai met `uv run seo` (werkt op Windows, macOS en Linux).
 
 ## Werkwijze voor elke skill
 1. **Klant bepalen.** Vraag welke klant als dat niet duidelijk is (`seo klanten`). Lees `client.toml`, `profiel.md`
